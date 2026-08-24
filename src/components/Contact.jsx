@@ -2,11 +2,10 @@ import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 
-// TODO: replace with your real profile URLs
 const socialLinks = [
   { icon: FaGithub, href: 'https://github.com/KodandaHari', label: 'GitHub' },
-  { icon: FaLinkedin, href: 'https://www.linkedin.com/in/your-linkedin/', label: 'LinkedIn' },
-  { icon: FaEnvelope, href: 'mailto:your-email@example.com', label: 'Email' }
+  { icon: FaLinkedin, href: 'https://www.linkedin.com/in/kodanda-nowpada-68961919b/', label: 'LinkedIn' },
+  { icon: FaEnvelope, href: 'mailto:kodandahari463@gmail.com', label: 'Email' }
 ];
 
 const Contact = () => {

@@ -8,8 +8,7 @@ import Experience from './Experience';
 import Projects from './Projects';
 import Skills from './Skills';
 
-// TODO: adjust roles to whatever titles best describe you
-const ROLES = ['AEM Developer', 'Java Developer', 'Backend Engineer'];
+const ROLES = ['Full Stack AEM Developer', 'AEM Developer', 'Java Developer'];
 
 const TypewriterRole = () => {
   const [displayedText, setDisplayedText] = useState('');
@@ -59,14 +58,12 @@ const ProfileBadge = () => (
 
 const socialLinks = [
   { icon: FaGithub, href: 'https://github.com/KodandaHari' },
-  // TODO: replace with your real LinkedIn URL
-  { icon: FaLinkedin, href: 'https://www.linkedin.com/in/your-linkedin/' },
-  // TODO: replace with your real contact email
-  { icon: FaEnvelope, href: 'mailto:your-email@example.com' }
+  { icon: FaLinkedin, href: 'https://www.linkedin.com/in/kodanda-nowpada-68961919b/' },
+  { icon: FaEnvelope, href: 'mailto:kodandahari463@gmail.com' }
 ];
 
 const Hero = () => {
-  const techStack = ['AEM', 'Sling', 'OSGi', 'Java'];
+  const techStack = ['AEM', 'AEMaaCS', 'Java', 'React'];
 
   const blobs = [
     { style: { top: '10%', left: '5%', width: 120, height: 120, background: 'linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%)', opacity: 0.35 }, delay: 0 },
@@ -135,15 +132,14 @@ const Hero = () => {
             ))}
           </motion.div>
 
-          {/* TODO: swap this for your own summary */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
             className="text-text-secondary text-lg leading-relaxed"
           >
-            AEM Developer building content-driven, scalable web experiences. Add a sentence or two about
-            what you work on and what you're looking for next.
+            Full Stack AEM Developer with 5+ years of experience building and integrating enterprise
+            websites on AEM on-premise and AEMaaCS, across frontend, backend, and Adobe integrations.
           </motion.p>
 
           <motion.div
@@ -160,7 +156,7 @@ const Hero = () => {
             </ScrollLink>
 
             <a
-              href={process.env.PUBLIC_URL + '/Kodanda_AEM_Resume.pdf'}
+              href={process.env.PUBLIC_URL + '/Kodanda_Rao_Nowpada_Resume.pdf'}
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 border border-accent text-accent hover:bg-accent/10 rounded-full transition-all"

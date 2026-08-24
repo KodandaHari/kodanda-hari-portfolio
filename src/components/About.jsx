@@ -1,6 +1,12 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 
+const certifications = [
+  'AD0-E117: Adobe Experience Manager Sites Architect Master',
+  'AD0-E128: Adobe Experience Manager Sites Developer Professional',
+  'Claude Certified Architect – Foundations'
+];
+
 const About = () => {
   return (
     <motion.section
@@ -24,28 +30,36 @@ const About = () => {
           className="text-center mb-12"
         >
           <h2 className="text-4xl font-bold mb-6">About Me</h2>
-          {/* TODO: replace with your own 2-3 sentence summary */}
           <p className="text-lg text-text-secondary max-w-3xl mx-auto">
-            AEM Developer. Add a short summary of your background, the kind of work you enjoy,
-            and what you're focused on right now.
+            Full Stack AEM Developer with 5+ years of experience building and integrating enterprise
+            websites using AEM on-premise and AEMaaCS. Skilled across frontend (HTML5, CSS3, SASS,
+            JavaScript, HTL, React) and backend (Java, Sling Models, OSGi, Servlets, workflows,
+            schedulers) development, with hands-on experience in headless AEM, REST APIs, Dispatcher
+            configuration, DAM management, and integrations with Adobe Analytics, Target, and Launch.
           </p>
         </motion.div>
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <h3 className="text-xl font-semibold mb-3 text-accent">Education</h3>
-            {/* TODO: replace with your real education history */}
             <div className="mb-4">
-              <div className="font-bold text-text-primary">Your Degree</div>
-              <div className="text-text-secondary">Your University, Start – End</div>
-              <div className="text-text-muted text-sm">Add GPA / coursework here if you'd like</div>
+              <div className="font-bold text-text-primary">B.Tech in Computer Science</div>
+              <div className="text-text-secondary">Bapatla Engineering College, 2017 – 2021</div>
+            </div>
+            <div>
+              <div className="font-bold text-text-primary">Intermediate, Mathematics and Computers</div>
+              <div className="text-text-secondary">Jawahar Navodaya Vidyalaya, 2015 – 2017</div>
             </div>
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-3 text-accent">Certifications</h3>
-            {/* TODO: e.g. Adobe Certified Master - AEM Sites Architect, if applicable */}
-            <div className="text-text-secondary text-sm">
-              Add certifications relevant to your role here.
-            </div>
+            <ul className="space-y-2 text-text-secondary text-sm">
+              {certifications.map((cert) => (
+                <li key={cert} className="flex items-start">
+                  <span className="text-accent mr-2">•</span>
+                  {cert}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

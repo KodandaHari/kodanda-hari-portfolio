@@ -1,0 +1,9 @@
+{
+  "short_name": "Kodanda Hari",
+  "name": "Kodanda Hari - Portfolio",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#111827",
+  "background_color": "#111827"
+}

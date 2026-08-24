@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kodanda-hari-portfolio/static/css/main.595908d3.css",
+    "main.js": "/kodanda-hari-portfolio/static/js/main.f5253e51.js",
+    "index.html": "/kodanda-hari-portfolio/index.html",
+    "main.595908d3.css.map": "/kodanda-hari-portfolio/static/css/main.595908d3.css.map",
+    "main.f5253e51.js.map": "/kodanda-hari-portfolio/static/js/main.f5253e51.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.595908d3.css",
+    "static/js/main.f5253e51.js"
+  ]
+}

@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/kodanda-hari-portfolio/static/css/main.595908d3.css",
-    "main.js": "/kodanda-hari-portfolio/static/js/main.f5253e51.js",
+    "main.css": "/kodanda-hari-portfolio/static/css/main.39fb3532.css",
+    "main.js": "/kodanda-hari-portfolio/static/js/main.c01b8527.js",
     "index.html": "/kodanda-hari-portfolio/index.html",
-    "main.595908d3.css.map": "/kodanda-hari-portfolio/static/css/main.595908d3.css.map",
-    "main.f5253e51.js.map": "/kodanda-hari-portfolio/static/js/main.f5253e51.js.map"
+    "main.39fb3532.css.map": "/kodanda-hari-portfolio/static/css/main.39fb3532.css.map",
+    "main.c01b8527.js.map": "/kodanda-hari-portfolio/static/js/main.c01b8527.js.map"
   },
   "entrypoints": [
-    "static/css/main.595908d3.css",
-    "static/js/main.f5253e51.js"
+    "static/css/main.39fb3532.css",
+    "static/js/main.c01b8527.js"
   ]
 }

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
-import { FaArrowDown, FaEnvelope, FaGithub, FaLinkedin, FaStar } from 'react-icons/fa';
+import { FaArrowDown, FaChess, FaEnvelope, FaFutbol, FaGithub, FaLinkedin, FaPenNib } from 'react-icons/fa';
+import { GiCricketBat } from 'react-icons/gi';
 import { Link as ScrollLink } from 'react-scroll';
 import About from './About';
 import Contact from './Contact';
@@ -50,9 +51,12 @@ const TypewriterRole = () => {
 };
 
 const ProfileBadge = () => (
-  <div className="relative z-10 w-40 h-40 rounded-full border-4 border-white/20 shadow-xl bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center">
-    {/* TODO: replace with <img src={process.env.PUBLIC_URL + '/your-photo.jpg'} .../> once you have a photo */}
-    <span className="text-5xl font-bold text-background-darker">KH</span>
+  <div className="relative z-10 w-40 h-40 rounded-full border-4 border-white/20 shadow-xl overflow-hidden bg-surface">
+    <img
+      src={process.env.PUBLIC_URL + '/profile.jpg'}
+      alt="Kodanda Hari"
+      className="w-full h-full object-cover"
+    />
   </div>
 );
 
@@ -207,30 +211,51 @@ const Hero = () => {
   );
 };
 
-// TODO: this is a placeholder personal-interests section — swap FANDOMS for your own, or delete this component and its usage below if you'd rather not have it.
 const FANDOMS = [
-  { title: 'Add a fandom', blurb: 'Say what you\'re a fan of and why it inspires you.', tag: '#placeholder' },
-  { title: 'Add another', blurb: 'A second thing you\'re into outside of work.', tag: '#placeholder' }
+  {
+    icon: FaFutbol,
+    title: 'Football & Messi',
+    blurb: 'Lionel Messi is my football idol — his vision on the ball and quiet, relentless work ethic are a constant source of inspiration.',
+    tag: '#Messi'
+  },
+  {
+    icon: FaPenNib,
+    title: 'Book Reading & Writing',
+    blurb: 'I love reading books, especially Telugu literature, and writing in my own time — it keeps me rooted in language and storytelling.',
+    tag: '#Writer'
+  },
+  {
+    icon: GiCricketBat,
+    title: 'Cricket & Rohit Sharma',
+    blurb: "A lifelong cricket fan, and I've always admired Rohit Sharma's calm captaincy and effortless power-hitting.",
+    tag: '#RohitSharma'
+  },
+  {
+    icon: FaChess,
+    title: 'Chess',
+    blurb: 'Chess is where I slow down and think several moves ahead — a mental reset that sharpens patience and planning.',
+    tag: '#ChessLover'
+  }
 ];
 
 const Fandom = () => (
   <section className="py-12 bg-surface-dark relative overflow-hidden">
     <div className="container relative z-10">
       <h2 className="text-3xl font-bold text-center mb-8 text-accent">A Bit More About Me</h2>
-      <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {FANDOMS.map((f) => (
           <motion.div
             key={f.title}
-            className="card p-8 flex flex-col items-center text-center max-w-xs"
+            className="card p-6 flex flex-col items-center text-center"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             whileHover={{ scale: 1.05 }}
             transition={{ type: 'spring', stiffness: 200, damping: 18 }}
           >
-            <FaStar className="text-4xl text-accent mb-4" />
-            <h3 className="text-xl font-bold mb-2">{f.title}</h3>
-            <p className="text-text-secondary mb-4">{f.blurb}</p>
+            <f.icon className="text-4xl text-accent mb-4" />
+            <h3 className="text-lg font-bold mb-2">{f.title}</h3>
+            <p className="text-text-secondary text-sm mb-4">{f.blurb}</p>
             <span className="inline-block bg-accent/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">
               {f.tag}
             </span>
